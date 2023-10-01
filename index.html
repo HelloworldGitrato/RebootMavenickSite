@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RebootMaverick</title>
+    <style>
+        body {
+            font-family: Impact, sans-serif;
+            background-color: #001F3F; /* より濃い青色 */
+            color: #FFFFFF;
+            text-align: center;
+            opacity: 0; /* 最初は透明 */
+            animation: fadeIn 1.5s forwards; /* 入出りのふわっと感を追加 */
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-top: 20vh; /* 垂直方向の中央揃え */
+        }
+
+        .join-button {
+            display: inline-block;
+            background-color: #E0463A;
+            color: #FFFFFF;
+            font-size: 1.5em;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 50px; /* 角を丸くする */
+            transition: all 0.3s ease; /* ホバーエフェクトを追加 */
+        }
+
+        .join-button:hover {
+            background-color: #C53125;
+            border-radius: 0; /* ホバー時に角をなくす */
+            transform: scale(1.1); /* ホバー時に拡大するアニメーション */
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1; /* ふわっと表示 */
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>RebootMaverick</h1>
+    <a class="join-button" href="https://discord.gg/EncDPtaMDB">Join</a>
+</body>
+</html>
